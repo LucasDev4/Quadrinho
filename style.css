@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,300..700;1,300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Intel One Mono", monospace;
+}
+
+body {
+    background-color: #0a0a0a;
+}
+
+header {
+    width: 100%;
+    background-color: #0a0a0a;
+    box-shadow: 2px 4px 10px #ffffff1a;
+    padding: 50px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: left;
+}
+
+header img {
+    width: 80px;
+    height: 80px;
+}
+
+nav {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+
+nav a:hover {
+    color: #c2c2c2;
+    transform: translateY(-5px);
+}
+
+main {
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 4px 10px #ffffff1a;
+    border-radius: 12px;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
+    color: white;
+    margin-top: 150px;
+    padding: 40px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.card img {
+    width: 200px;
+    height: 250px;
+    border-radius: 12px;
+    transition: 0.4s ease;
+}
+.card img:hover{
+    transform: scale(1.02);
+}
+
+.box a {
+    text-decoration: none;
+}
+
+.loadView {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 85vh;
+}
+
+.loadView h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.containerCat {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 calc(50% - 250px);
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.containerCat::-webkit-scrollbar {
+    display: none;
+}
+
+.containerCat img {
+    width: 500px;
+    height: 400px;
+    object-fit: contain;
+    flex-shrink: 0;
+    transition: all 0.5s ease;
+    filter: blur(5px);
+    opacity: 0.5;
+}
+
+.containerCat img.active {
+    filter: blur(0);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.pass {
+    display: flex;
+    gap: 20px;
+}
+
+.pass img {
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.pass img:hover {
+    transform: scale(1.1);
+}
+
+.countView {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.countView div {
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    box-shadow: 1px 2px 8px rgb(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.countView div:hover {
+    transform: translateY(-5px);
+}
+
+.countView div.active {
+    transform: translateY(-5px);
+    background-color: white;
+}
